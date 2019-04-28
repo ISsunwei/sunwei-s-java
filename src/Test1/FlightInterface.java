@@ -1,4 +1,4 @@
-package sunwei;
+package Test1;
 
 public interface FlightInterface {
 	public int[ ] reserve(String names);       //Ô¤¶©º½°à×ùÎ»

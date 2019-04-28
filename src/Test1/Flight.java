@@ -1,4 +1,4 @@
-package sunwei;
+package Test1;
 
 public class Flight {
 	private String flightName;          //º½°àÃû

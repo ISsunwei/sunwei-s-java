@@ -1,4 +1,4 @@
-package sunwei;
+package Test1;
 
 public interface PassengerInterface {
 	public String getName();        //获取旅客姓名
