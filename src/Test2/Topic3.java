@@ -9,5 +9,8 @@ public class Topic3 {
 		
 		String n = m.toString();
 		Integer n2 = new Integer(n);     //包装类和字符串相互转换
+		
+		n = String.valueOf(num);         //基本数据类型与字符串互相转换
+		num = Integer.valueOf(n);
 	}
 }
