@@ -9,8 +9,8 @@ public class Topic4_2 {
 		Scanner input = new Scanner(System.in);
 		System.out.println("ÇëÊäÈëIPµØÖ·×Ö·û´®£º");
 		String str = input.nextLine();
-		if(str.matches("\\d{1,3}\\.d{3}\\.d{1,3}")) {
-			System.out.println("str");
+		if(str.matches("\\d{1,3}\\.\\d{3}\\.\\d{1,3}")) {
+			System.out.println(str);
 		}
 		else
 			System.out.println("´íÎóIPµØÖ·");
