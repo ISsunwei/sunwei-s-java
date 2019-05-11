@@ -16,6 +16,8 @@ public class Topic6 {
 		}
 		System.out.println();
 		int[] b = a.clone();
+		
+		//将数组元素进行排序
 		System.out.println("对数组b进行排序");
 		Arrays.sort(b);
         for (int m : b) {
