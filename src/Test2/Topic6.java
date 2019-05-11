@@ -27,7 +27,7 @@ public class Topic6 {
         
         //输入一个数值，再查找该数在数组中哪个位置
         Scanner input = new Scanner(System.in);
-        System.out.println("请输入一个数值");
+        System.out.println("\n请输入一个数值");
         int num = input.nextInt();
         if(Arrays.binarySearch(b,num) < 0) {
         	System.out.println("该元素不存在");
