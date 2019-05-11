@@ -2,6 +2,7 @@ package Test2;
 
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Topic6 {
 
@@ -23,5 +24,16 @@ public class Topic6 {
         for (int m : b) {
             System.out.print(m+" ");
         }
+        
+        //输入一个数值，再查找该数在数组中哪个位置
+        Scanner input = new Scanner(System.in);
+        System.out.println("请输入一个数值");
+        int num = input.nextInt();
+        if(Arrays.binarySearch(b,num) < 0) {
+        	System.out.println("该元素不存在");
+        }
+        else
+        	System.out.println("元素位置："+Arrays.binarySearch(b,num));
+        
 	}
 }
