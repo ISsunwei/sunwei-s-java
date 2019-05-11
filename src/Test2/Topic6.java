@@ -1,5 +1,6 @@
 package Test2;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Topic6 {
@@ -15,6 +16,10 @@ public class Topic6 {
 		}
 		System.out.println();
 		int[] b = a.clone();
-		
+		System.out.println("对数组b进行排序");
+		Arrays.sort(b);
+        for (int m : b) {
+            System.out.print(m+" ");
+        }
 	}
 }
