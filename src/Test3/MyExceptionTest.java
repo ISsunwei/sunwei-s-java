@@ -11,8 +11,8 @@ public class MyExceptionTest extends NumberFormatException {
 	public MyExceptionTest() {
 		super();
 	}
-	public MyExceptionTest(String str) {
-		super(str);
+	public MyExceptionTest(String message) {
+		super(message);
 	}
 	
 }
