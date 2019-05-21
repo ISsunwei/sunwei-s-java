@@ -1,5 +1,7 @@
 package Test3;
-
+/*
+ * 3、最后写一个测试类，调用自定义工具类的parseInt方法，并进行异常捕获处理。
+ */
 import java.util.Scanner;
 
 public class Test {
