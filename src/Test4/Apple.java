@@ -7,6 +7,11 @@ public class Apple {
 
 	private String color;
 	private float weight;
+	public Apple() {}
+	public Apple(String color,float weight) {
+		this.color = color;
+		this.weight = weight;
+	}
 	public String getColor() {
 		return color;
 	}
