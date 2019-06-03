@@ -1,11 +1,22 @@
 package Test5;
 
-public class Tset_1 {
+import java.util.TreeSet;
+import java.util.Comparator;
+
+public class Tset_1 implements Comparator{
+
+	public int compare(Student o1, Student o2) {
+		
+		return 0;
+	}
 
 	public static void main(String[] args) {
 		
 	}
-}
+
+}		
+
+
 
 class Student{
 	private int id;
@@ -41,3 +52,4 @@ class Student{
 	};
 	
 }
+
