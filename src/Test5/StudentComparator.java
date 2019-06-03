@@ -2,16 +2,31 @@ package Test5;
 
 import java.util.TreeSet;
 import java.util.Comparator;
+import java.util.Iterator;
 
 public class StudentComparator implements Comparator<Student>{
 
 	public static void main(String[] args) {
 		TreeSet<Student> st = new TreeSet<>(new StudentComparator());
+		st.add(new Student(1,"Tom",77));
+		st.add(new Student(1,"William",80));
+		st.add(new Student(1,"Bob",77));
+		st.add(new Student(1,"bill",65));
 		
+		Iterator iter = st.iterator();
+        while (iter.hasNext()) {
+                    System.out.println(iter.next());
+        }
 	}
 
 	public int compare(Student s1, Student s2) {
-		return s1.getScore()-s2.getScore();
+		if(s1.getScore()>s2.getScore()){
+            return 1;
+        }else if(s1.getScore()<s2.getScore()){
+            return -1;
+        } else {
+           return  s1.getName().compareTo(s2.getName());
+        }
 	}
 
 }		
