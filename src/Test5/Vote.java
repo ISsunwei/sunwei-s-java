@@ -25,7 +25,8 @@ public class Vote {
 				} else {
                     map.put(num, 1);
                 }
-			}
+			}	
 		}
+		map.forEach((key, value) -> System.out.println(key + " : " + value));
 	}
 }
