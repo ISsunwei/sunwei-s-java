@@ -39,7 +39,22 @@ public class Test<T> {
     public int size() {
     	return queue.size();
     }
+    //判断列队是否为空
+    public boolean isEmpty() {
+        return queue.isEmpty();
+    }
+    //清空队列
+    public void clear() {
+        queue.clear();
+    }
+    
 	public static  void main(String[] args) {
-
+		Test<String> myQueue = new Test<>();
+		 myQueue.addFirst("1");
+	     myQueue.addLast("2");
+	     myQueue.addLast("3");
+	     while (!myQueue.isEmpty()) {
+	            System.out.println(myQueue.removeFirst());
+	     }
 	}
 }
