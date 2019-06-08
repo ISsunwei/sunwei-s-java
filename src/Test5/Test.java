@@ -54,7 +54,7 @@ public class Test<T> {
 	     myQueue.addLast("2");
 	     myQueue.addLast("3");
 	     while (!myQueue.isEmpty()) {
-	            System.out.println(myQueue.removeFirst());
+	            System.out.println(myQueue.removeLast());
 	     }
 	}
 }
