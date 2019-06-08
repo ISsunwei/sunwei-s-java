@@ -17,11 +17,11 @@ public class StudentMap {
 		// keyset
 		Set<Student2> ks = hm.keySet();
 		Iterator<Student2> it=ks.iterator();
-		while(it.hasNext()) {
-			Student2 st = it.next();
-			String addr=hm.get(st);
-			System.out.println(st+"---"+addr);
-		}
+		for(Student2 students : hm.keySet()){
+
+            System.out.println(students.getName()+" "+students.getAge());
+
+        }
 	}
 }
 
@@ -58,5 +58,22 @@ class Student2 {
 	public String toString() {
 		return "Student2 [name=" + name + ", age=" + age + "]";
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
 	
 }
