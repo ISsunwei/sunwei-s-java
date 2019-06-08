@@ -20,6 +20,11 @@ public class Vote {
 			System.out.println("输入两个候选人编号");
 			for(int j=0;j<2;j++) {
 				int num = input.nextInt();
+				if(map.containsKey(num)) {
+					map.put(num, map.get(num) + 1);
+				} else {
+                    map.put(num, 1);
+                }
 			}
 		}
 	}
