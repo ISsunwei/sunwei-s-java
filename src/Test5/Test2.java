@@ -19,5 +19,10 @@ public class Test2 {
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
+        System.out.println("---------分割线------------");
+        // 按学号升序
+        list.sort(new StudentComp());
+        Iterator<Students> iterator2 = list.iterator();
+        iterator2.forEachRemaining(System.out::println);
 	}
 }
